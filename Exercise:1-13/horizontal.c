@@ -54,4 +54,6 @@ int main(){
             printf("\n");
         }
     }
+
+    return OUT;
 }
