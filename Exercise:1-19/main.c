@@ -1,4 +1,3 @@
-#include <linux/limits.h>
 #include <stdio.h>
 
 #define MAXLEN 50
@@ -13,7 +12,7 @@ int main(){
     while ((len = get_line(line, MAXLEN)) > 0) {
         if(len > max){
             max = len;
-            reverse(dest, line);
+            copy(dest, line);
         }
     }
     if(max > 0)
