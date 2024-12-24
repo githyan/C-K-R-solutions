@@ -4,7 +4,7 @@
 #define MAXLEN 50
 
 int get_line(char src[], int lim);
-void reverse(char from[], char to[]);
+void copy(char from[], char to[]);
 int main(){
     int len, max = 0;
     char line[MAXLEN] = {'\0'};
@@ -39,6 +39,6 @@ int get_line(char src[], int lim) {
     return i;
 }
 
-void reverse(char src[], char to[]) {
+void copy(char src[], char to[]) {
     for (int i = 0; (src[i] = to[i]) != '\0'; i++);
 }
